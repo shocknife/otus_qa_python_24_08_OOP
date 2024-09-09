@@ -1,4 +1,4 @@
-from src.Figure import Figure
+from src.figure import Figure
 from math import sqrt
 
 
@@ -15,12 +15,12 @@ class Triangle(Figure):
         self.side_c = side_c
 
     @property
-    def get_area(self):
+    def area(self):
         p = (self.get_perimetr) / 2
         return round(
             sqrt(p * (p - self.side_a) * (p - self.side_b) * (p - self.side_c)), 3
         )
 
     @property
-    def get_perimetr(self):
+    def perimetr(self):
         return self.side_a + self.side_b + self.side_c

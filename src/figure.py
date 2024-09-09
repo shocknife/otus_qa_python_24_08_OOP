@@ -4,12 +4,12 @@ from abc import ABC, abstractmethod
 class Figure(ABC):
     @property
     @abstractmethod
-    def get_area(self):
+    def area(self):
         pass
 
     @property
     @abstractmethod
-    def get_perimetr(self):
+    def perimetr(self):
         pass
 
     def add_area(self, figure):
