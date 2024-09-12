@@ -15,4 +15,4 @@ class Figure(ABC):
     def add_area(self, figure):
         if not isinstance(figure, Figure):
             raise ValueError(f"Аргумент {figure} должен быть объектом класса Figure")
-        return self.get_area + figure.get_area
+        return self.area + figure.area
