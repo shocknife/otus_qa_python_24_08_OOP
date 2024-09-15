@@ -5,7 +5,7 @@ from math import pi
 class Circle(Figure):
     def __init__(self, radius):
         if radius <= 0:
-            raise ValueError("Не может быть круга со стороной меньше либо равной 0")
+            raise ValueError("Не может быть круга со радиусом меньше либо равной 0")
         self.radius = radius
 
     @property
